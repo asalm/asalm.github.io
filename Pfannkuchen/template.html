@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<!-- FONT ROBOTO von Google -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<!-- JQUERY UI -->
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+			<a href="../landing.html">
+				<div id="logo">
+				</div>
+			</a>
+			<div id="contentrow">
+				<div class="nowrap">
+					<div class="object">
+						<a href="../SpaghettiBolognese/template.html">
+							<img id="beef" src="../BI.svg">
+						</a>
+					</div>
+					<div class="object">
+						<a href="../SpaghettiAvocado/template.html">
+							<img id="vegan" src="../Vegan.svg">
+						</a>
+					</div>
+					<div class="object">
+						<a href="../Chicken Wrap/template.html">
+							<img id="chicken" src="../chicken.svg">
+						</a>
+					</div>
+					<div class="object">
+						<a href="../Lachs/template.html">
+							<img id="fish" src="../fish.svg">
+						</a>
+					</div>
+					
+					<div class="object">
+						<a onclick="RandomSpa()">
+							<img id="random" src="../random.svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="content-wrapper">
+			<div id="title">
+			<h1>Pfannkuchen</h1>
+			<p>10m Zubereitungszeit</p>
+			</div>
+
+			<div id="rezept">
+				<div id="accordion">
+					 <h3>Zutaten</h3>
+  						<div>
+						    <p>
+						    <b>Für 4 Personen</b><br>
+						    500 ml Milch<br>
+						    3 Eier <br>
+						    100g Zucker <br>
+						    220g Mehl <br>
+						    Butter oder Öl für die Pfanne <br>
+						    1 Prise Salz <br>
+						    </p>
+  						</div>
+  					<h3>Schritt 1</h3>
+						<div>
+						    <p>
+						    Bis auf das Mehl alle Zutaten verrühren, das Mehl am Ende untermischen.
+
+						    </p>
+						</div>
+					<h3>Schritt 2 </h3>
+						<div>
+							<p>
+							Eine Pfanne mit Öl oder Butter beschmieren. Den Teig in die Pfanne geben und bei erhöhter Hitze kurz von beiden Seiten anbraten, bis der Pfannkuchen goldig-braun ist.
+							</p>
+						</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+		<p>
+		<a href="../impressum.html">
+		Impressum </a>- Kontakt - Gericht einreichen
+		</p>
+	
+		</div>
+	</div>
+
+	<script>
+	  jQuery().ready(function(){
+	    jQuery( "#accordion" ).accordion();
+	  });
+  	</script>
+  	  	<SCRIPT>
+		<!--
+		function RandomSpa()
+		{
+
+		    Spa = new Array;
+		    Spa[0] = "../SpaghettiAvocado/template.html";
+		    Spa[1] = "../Pfannkuchen/template.html";
+		    Spa[2] = "../Lachs/template.html";
+		    Spa[3] = "../SpaghettiBolognese/template.html";
+		    Spa[4] = "../Chicken Wrap/template.html";
+		    //Url[3] = "http://www. ccm.net/forum/";
+
+		    Chooselink = Math.round(Math.random() * (Spa.length+1));
+		    window.open(Spa[Chooselink],'_self');
+		}
+	</SCRIPT>
+</body>
+
+</html>
