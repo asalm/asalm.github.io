@@ -1,0 +1,224 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body, html { min-height: 100%; 
+
+
+color: white;
+background: url(background.png) 
+center no-repeat;
+background-size: cover;
+background-position:fixed;
+background-attachment:fixed; 
+background-color: #444;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+}
+
+#wrapper{
+	width:100%;
+	height:100%;
+}
+
+#header {
+	margin-top:5px;
+	width:100%;
+	height:100px;
+
+	display:inline-block;
+}
+#header #logo {
+	width:450px;
+	height:75px;
+	float:left;
+	background-image: url(headerlogo_k.png);
+}
+
+
+#header #contentrow{
+	width:550px;
+	height:100px;
+	float:right;
+	padding:0;
+
+}
+#header .nowrap {
+  position:absolute;
+  float: right;
+  width:550px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin:0 auto;
+}
+
+#content-wrapper{
+	margin: 0 auto;
+
+	width:95%;
+	height:500px;
+	top:140px;
+}
+
+#content-wrapper #title{
+	position:relative;
+	float:left;
+	width:40%;
+	height:400px;
+	margin:auto 0;
+	margin-top:5em;
+}
+
+#content-wrapper #title h1{
+	text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+	font-size:36pt;
+	margin-left:30px;
+	margin-top: 30px;
+	color:white;
+}
+
+#content-wrapper #title p{
+	text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+	margin-left:30px;
+	color:white;
+}
+
+#content-wrapper #rezept{
+	margin-top:5em;
+	position:relative;
+	float:right;
+	width:55%;
+	height:400px;
+
+}
+
+#header .object{
+	left:50%;
+	float:left;
+	width: 13%;
+	height: auto;
+}
+
+#vegan{
+	background-color: green;
+	border-radius: 50%;
+	width: 90%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#beef{
+	background-color: brown;
+	border-radius: 50%;
+	width: 90%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#fish{
+	background-color: lightblue;
+	border-radius: 50%;
+	width: 90%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#chicken {
+	background-color: orange;
+	border-radius: 50%;
+	width: 90%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#random {
+	background-color: gray;
+	border-radius: 50%;
+	width: 90%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#vegan:hover{
+	background-color: darkgreen;
+}
+
+#beef:hover{
+	background-color: darkred;
+}
+
+#fish:hover {
+	background-color: blue;
+}
+
+#chicken:hover {
+	background-color: darkorange;
+}
+
+#random:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+#content-wrapper #rezept #accordion{
+	margin-top:30px;
+}
+
+#content-wrapper #rezept h3{
+	-webkit-box-shadow: 0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+	-moz-box-shadow:    0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+	box-shadow:         0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+	border:1px #3B3B3B solid;
+	background-color:rgba(0,0,0,.5);
+	color:white;
+
+	padding:3px;
+	margin-top:2px;
+	margin-left:1em;
+	margin-right:1em;
+}
+#content-wrapper #rezept p{
+	-webkit-box-shadow: 0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+	-moz-box-shadow:    0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+	box-shadow:         0px 0px 13px 4px rgba(50, 50, 50, 0.56);
+
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	border:1px #3B3B3B solid;
+	background-color:rgba(0,0,0,.5);
+	color:white;
+	margin-top:5px;
+	margin-left:1.2em;
+	margin-right:1.2em;
+	margin-bottom:5px;
+	padding:5px;
+}
+#footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:14pt;
+	text-align:right;
+
+}
+#footer p{
+	text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+	margin-right:1em;
+	font-size:12pt;
+	color:white;
+}
+#footer p:hover{
+	color:#75EA47;
+}

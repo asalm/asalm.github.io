@@ -5,67 +5,68 @@
 </head>
 <body>
 
-<div id="wrapper">
-	<div id="header">
-	</div>
+	<div id="wrapper">
+		<div id="header">
+			<a href="landing.html">
+				<img id="logo" src="headerlogo.png">
+			</a>
+		</div>
 
-	<div id="contentrow">
-		<div class="nowrap">
-		<a href="#" onClick="RandomSpa();">
-			<div class="object">
-				<img id="beef" src="BI.svg">
+		<div id="contentrow">
+			<div class="nowrap">
+				<a href="SpaghettiBolognese/template.html">
+					<div class="object">
+						<img id="beef" src="BI.svg">
+					</div>
+				</a>
+				<a href="./SpaghettiAvocado/template.html">
+					<div class="object">
+						<img id="vegan" src="Vegan.svg">
+					</div>
+				</a>
+				<a href="./Chicken Wrap/template.html">
+					<div class="object">
+						<img id="chicken" src="chicken.svg">
+					</div>
+				</a>
+				<a href="./Lachs/template.html">
+					<div class="object">
+						<img id="fish" src="fish.svg">
+					</div>
+				</a>
+				<a onclick="RandomSpa()">
+					<div class="object">
+						<img id="random" src="random.svg">
+					</div>
+				</a>
 			</div>
-		</a>
-		<a href="#" onClick="RandomFle();">
-			<div class="object">
-				<img id="vegan" src="Vegan.svg">
-			</div>
-		</a>
-			<div class="object">
-			3
-			</div>
-			<div class="object">
-			4
-			</div>
-			
-			<div class="object">
-			5
-			</div>
-		
+		</div>
+
+		<div id="footer">
+			<p>
+			<a href="impressum.html">
+			Impressum - Kontakt - Gericht einreichen
+			</p>
 		</div>
 	</div>
 
-	<div id="footer">
-	<p>Dies ist ein testText</p>
-	</div>
-</div>
-<SCRIPT>
-<!--
-function RandomSpa()
-{
+	<SCRIPT>
+		<!--
+		function RandomSpa()
+		{
 
-    Spa = new Array;
-    Spa[0] = "SpagettiAvocado/template.html";
-    Spa[1] = "Pfannkuchen/template.html";
-    //Url[3] = "http://www. ccm.net/forum/";
+		    Spa = new Array;
+		    Spa[0] = "SpaghettiAvocado/template.html";
+		    Spa[1] = "Pfannkuchen/template.html";
+		    Spa[2] = "Lachs/template.html";
+		    Spa[3] = "SpaghettiBolognese/template.html";
+		    Spa[4] = "Chicken Wrap/template.html";
+		    //Url[3] = "http://www. ccm.net/forum/";
 
-    Chooselink = Math.round(Math.random() * (Spa.length+1));
-    window.open(Spa[Chooselink],'_self');
-}
-function RandomFle()
-{
-
-    Fle = new Array;
-    Fle[0] = "SpagettiBolognese/template.html";
-    //Fle[1] = "content/SpagettiBolognese/template.html";
-    //Fle[2] = "content/Pfannkuchen/template.html";
-    //Url[3] = "http://www. ccm.net/forum/";
-
-    Chooselink = Math.round(Math.random() * (Fle.length+1));
-    window.open(Fle[Chooselink],'_self');
-}
-//-->
-</SCRIPT>
+		    Chooselink = Math.round(Math.random() * (Spa.length+1));
+		    window.open(Spa[Chooselink],'_self');
+		}
+	</SCRIPT>
 
 </body>
 </html>

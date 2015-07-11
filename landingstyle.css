@@ -7,7 +7,7 @@ body, html { min-height: 100%;
 
 
 color: white;
-background: url(Pfannkuchen/background.png) 
+background: url(SpaghettiAvocado/background.png) 
 center no-repeat;
 background-size: cover;
 background-position:fixed;
@@ -34,10 +34,17 @@ p{
 	position:relative;
 	top:30px;
 	margin:0 auto;
-	width:600px;
+	width:100%;
 	height:100px;
-	background-image:url(headerlogo.png);
-	
+
+	background-repeat: no-repeat;
+}
+
+#logo {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	left:25%;
 }
 
 
@@ -58,28 +65,52 @@ p{
   width:100%;
   overflow: hidden;
   white-space: nowrap;
-  margin:0 auto;
 }
 
-.object{
-	left:0;
+.object{	left:50%;
 	float:left;
-	margin:.5%;
-	border-radius:50%;
-	background-color: black;
-}
-
-.object:hover{
+	width: 20%;
+	height: auto;
 }
 
 #vegan{
 	background-color: green;
 	border-radius: 50%;
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
 }
 
 #beef{
 	background-color: brown;
 	border-radius: 50%;
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#fish{
+	background-color: lightblue;
+	border-radius: 50%;
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#chicken {
+	background-color: orange;
+	border-radius: 50%;
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
+}
+
+#random {
+	background-color: gray;
+	border-radius: 50%;
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
 }
 
 #vegan:hover{
@@ -89,6 +120,20 @@ p{
 #beef:hover{
 	background-color: darkred;
 }
+
+#fish:hover {
+	background-color: blue;
+}
+
+#chicken:hover {
+	background-color: darkorange;
+}
+
+#random:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
 #footer{
 	position:absolute;
 	bottom:0;
